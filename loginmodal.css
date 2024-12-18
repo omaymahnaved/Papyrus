@@ -1,0 +1,78 @@
+.fas{
+    color: #7d2ae8;
+    font-size: 30px;
+}
+.modal-header{
+    background-color: #7c2ae8;
+    color:darkgrey;
+    font-family: "Poppins" , sans-serif;
+
+}
+.modal-title{
+    background: #7c2ae888;
+    font-size: 50px;
+    font-family: "Poppins" , sans-serif;
+    text-align: left;
+    color: white;
+}
+.button input:hover{
+    background: #7d2ae8;
+    color: aliceblue;
+}
+.modal-body{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom-style: none;
+}
+#btnlogin{
+    background-color:#6f42c1;
+    font-size: 19px;
+    color: white;
+    width: 370px;
+}
+#btnlogin:hover{
+    background-color:#6336b6;
+    color: white;
+}
+.btn-close{
+    font-size: 15px;
+    color: pink;
+    background-color:pink;
+    border-radius: 8px;
+}
+
+.btn-close:hover{
+
+    color:pink;
+
+}
+
+#dhaa{
+    color: darkgrey;
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+}
+
+.signbtn{
+    margin-right: 19%;
+    }
+
+#snhere{
+    color: #7c2ae8;
+}
+#fpass{
+    color: darkblue;
+    font-size:19px ;
+}
+.container{
+    font-size: 25px;
+
+}
+
+.input-box{
+    padding-top: 7%;
+}

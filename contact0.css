@@ -1,0 +1,52 @@
+#FORMCONTAINER{
+    width: 40%;
+    float: left;
+    margin-left: 2%;
+}
+
+#btnsub{
+    width: 50%;
+    background-color: rgb(255, 133, 153);
+}
+
+#btnsub:hover{
+    background-color: rgb(253, 151, 168);
+    transition: all 0.5s;
+}
+
+#floatingTextarea{
+    border: 2px solid pink;
+    margin-top: 25px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border: rgba(0, 128, 0, 0.74) 1px solid;
+}
+
+.form-control{
+    border: 2px solid pink;
+}
+
+#floatingTextarea:focus{
+    box-shadow: none;
+    border: rgba(0, 128, 0, 0.74) 1px solid;
+
+}
+
+.icons8{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 45px;
+    margin-top: 15%;
+    margin-bottom: 8%;
+}
+iframe{
+    width: 100%; 
+    height: 280px;
+}
+
+#ICONS{
+    float: right;
+    padding-bottom: 100px;
+}

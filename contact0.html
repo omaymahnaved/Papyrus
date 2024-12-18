@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAPYRUS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="footer.css"> -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="topback.css">
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="loginmodal.css">
+    <link rel="stylesheet" href="gethelp.css">
+    <link rel="stylesheet" href="contact0.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="filter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+      <!-- NAVBAR -->
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a href="home.html"><img src="text2.png" style="height: 50px; width: 200px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+
+          <div class="link">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+        </div>
+
+        <div class="link">
+          <li class="nav-item">
+            <a class="nav-link active" href="gallary.html">Gallery</a>
+          </li>
+        </div>
+
+        <div class="link">
+          <li class="nav-item">
+            <a class="nav-link active" href="aboutUs.html">AboutUs</a>
+          </li>
+        </div>
+
+
+        <div class="link">
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">ContactUs</a>
+          </li>
+        </div>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cards
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- <li><a class="dropdown-item" href="gallaryxyz.html"><b>Top Rated Cards</b></a></li> -->
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="gallaryxyz.html">Anniversary Cards</a></li>
+              <li><a class="dropdown-item" href="gallaryxyz.html">Birthday Cards</a></li>
+              <li><a class="dropdown-item" href="gallaryxyz.html">New year Cards</a></li>
+              <li><a class="dropdown-item" href="gallaryxyz.html">FriendShip Cards</a></li>
+              <li><a class="dropdown-item" href="gallaryxyz.html">Mother's-Day Cards</a></li>
+              <li><a class="dropdown-item" href="gallaryxyz.html">Father's-Day Cards</a></li>
+            </ul>
+          </li>
+<!-- DARK MIODE -->
+
+<div class="form-check form-switch" id="switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onclick="myFunction()" checked>
+  <label class="form-check-label" for="flexSwitchCheckChecked"><i class="fa-solid fa-circle-half-stroke"></i></label>
+</div>
+<script>
+function myFunction() {
+var element = document.body;
+element.classList.toggle("dark-mode");
+}
+</script>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <button type="button" class="btn btn-primary aun" id="btn1" href="#exampleModalToggle" data-bs-toggle="modal" data-bs-toggle="login123" role="button"> login</button>
+        <button type="button" class="btn btn-primary aun" id="btn1" href="#logout" data-bs-toggle="modal" data-bs-toggle="login123" role="button"> logout</button>
+      </div>
+    </div>
+  </nav>
+<!-- top to back -->
+<!-- logout modal -->
+<div class="modal" id="logout">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="logoutLabel">Log0ut <i class="fa-solid fa-triangle-exclamation"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="padding:40px 50px;">
+       <p> You Have Log0ut Successfull!!</p>
+      </div>
+  </div>
+</div>
+</div>
+<!-- login modal work  -->
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="padding:40px 50px;">
+        <form role="form">
+          <div class="input-boxes">
+            <div class="input-box">
+              <i class="fas fa-envelope"></i>
+              <input id="hi" type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+              <i class="fas fa-lock"></i>
+              <input id="hi" type="password" placeholder="Enter your password" required>
+            </div>
+            <div class="text"><a href="#" id="fpass">Forgot password?</a></div><br>
+
+            <div class="btnsub">
+            <button class="button btn btn-lg" type="submit" value="Sumbit" id="btnlogin">Submit</button>
+            </div>
+
+            <div class="modal-footer">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="text sign-up-text" id="dhaa">Don't have an account?</div>
+
+        <div class="signbtn">
+        <button class="btn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">SignIn</button>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2">SignIn</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="padding:40px 50px;">
+        <form role="form">
+          <div class="input-boxes">
+            <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Enter your name" id="hi" required>
+            </div>
+            <div class="input-box">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Enter your email" id="hi" required>
+            </div>
+            <div class="input-box">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Enter your password" id="hi" required>
+            </div>
+            <div class="btnsub">
+              <button class="button btn btn-lg" type="submit" value="Sumbit" id="btnlogin">Submit</button>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="text sign-up-text" id="dhaa">Already have an account</div>
+        <div class="signbtn">
+          <button class="btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+$("#myBtn123").click(function(){
+  $("#login123").modal();
+});
+});
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  <img src="arrow.png" alt="" >
+</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+ if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+   mybutton.style.display = "block";
+ } else {
+   mybutton.style.display = "none";
+ }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+ document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+
+<body onload="loading()">
+    <div class="container"  id="FORMCONTAINER">
+        <!-- <div class="row my-5">
+            <h1 class="text-center text-info">LOCAL STORAGE WORK</h1>
+            <hr>
+            <div class="col-md-6 my-5"> -->
+                
+                <!-- <form> -->
+                    <h1 class="text-center">Contact Us</h1>
+                    <h5 class="text-center">Your Quries Here</h5>
+                    <div class="row">
+                        <!------------------First name-------------  -->
+                        <div class="col-md-6 mt-5">
+                            <input type="text" class="form-control" placeholder="First name" id="fname" required>
+
+                        </div>
+
+                        <!------------------Last name-------------  -->
+                        <div class="col-md-6 mt-5">
+                            <input type="text" class="form-control" placeholder="Last name" id="lname" required>
+                        </div>
+
+                        <!------------------Email-------------  -->
+                        <div class="col-md-6 mt-5">
+                            <input type="email" class="form-control" placeholder="Email" id="email" required>
+                        </div>
+
+                        <!------------------Phone Number-------------  -->
+                        <div class="col-md-6 mt-5">
+                            <input type="tel" class="form-control" placeholder="Phone number" id="pass" required>
+                        </div>
+                    </div>
+
+                    <!----------------------- Message --------------->
+
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required
+                            style="height: 150px;"></textarea>
+                        <label for="floatingTextarea" style="color: gray;">Message</label>
+                    </div>
+                    
+                    <!------------------SUBMIT Button-------------  -->
+
+                    <div class="col-md-12 mt-5 text-center ">
+                        <a href="THANKU.html" target="_blank"><input type="button" class="btn" onclick="submit()" value="Submit"id="btnsub"></a>
+                    </div>
+
+                    
+
+                <!-- </form> -->
+            </div>
+
+            <div class="col-6 d-flex flex-column-reverse" id="ICONS">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115784.83525878444!2d66.96515979385477!3d24.92266244076528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1702971788312!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="icons8">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+
+            <!----------------- Display table ---------------->
+            <!-- <div class="col-md-6 my-5">
+                <h1 class="text-center text-success">User Data</h1>
+                <table class="table mt-5  table-hover" id="table1">
+                    <tr class="table-dark">
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                    </tr>
+                </table>
+            </div> -->
+
+        </div>
+    </div>
+
+    <script>
+        var user = [];
+        function submit(){
+            var firstname = document.getElementById("fname").value;
+            var lastname = document.getElementById("lname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("pass").value;
+
+            // console.log(firstname + lastname + email + password);
+            var myObj = {
+                f : firstname,
+                l : lastname,
+                e : email,
+                p : password
+            }
+
+            user.push(myObj);
+            localStorage.data = JSON.stringify(user);
+
+            myFetch(f,l,e,p);
+
+            document.getElementById("fname").value = "";
+            document.getElementById("lname").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("pass").value = "";
+        }
+        function myFetch(f,l,e,p){
+            var table = document.getElementById("table1");
+
+            var row = table.insertRow();
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+
+            cell1.innerHTML = f;
+            cell2.innerHTML = l;
+            cell3.innerHTML = e;
+            cell4.innerHTML = p;
+
+        }
+        function loading(){
+            if(localStorage.data){
+                user = JSON.parse(localStorage.data);
+                for(var i = 0; i < user.length; i++)
+                myFetch(user[i].f,user[i].l,user[i].e,user[i].p);
+            }
+        }
+    </script>
+
+    <!-- ------------FOOTER----------------- -->
+<!-- <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4 class="h5">Follow us</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/rao.zarrar.10"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/yk_zarrar/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="col-6" id="clock">
+            <span id="hours">12</span>
+            <span>:</span>
+            <span id="minutes">12</span>
+            <span>:</span>
+            <span id="seconds">12</span>
+            <span id="session">AM</span>
+          </div>
+      </div>
+      <div class="footer-col">
+        <h4>Our Company</h4>
+        <ul>
+          <li><a href="OUR_SERVICES.html">Our services</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Help</h4>
+        <ul>
+          <li><a href="aboutUs.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="ye dekho.pdf">Site Map</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Online Shop</h4>
+        <ul>
+          <li><a href="paymentpage.html">Payment Option</a></li>
+          <li><a href="gallaryxyz.html">Main Gallary</a></li>
+          <li><a href="fdbk-form.html">Feedback Form</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    function displaytTime() {
+      var dateTime = new Date();
+      var hrs = dateTime.getHours();
+      var min = dateTime.getMinutes();
+      var sec = dateTime.getSeconds();
+      var session = document.getElementById("session");
+
+      if (hrs >= 12) {
+        session.innerHTML = "PM";
+      } else {
+        session.innerHTML = "AM";
+      }
+
+      if (hrs > 12) {
+        hrs = hrs - 12;
+      } else {
+        session.innerHTML = "AM";
+      }
+
+      document.getElementById("hours").innerHTML = hrs;
+      document.getElementById("minutes").innerHTML = min;
+      document.getElementById("seconds").innerHTML = sec;
+    }
+    setInterval(displaytTime, 10);
+  </script> -->
+
+
+</body>
+</html>

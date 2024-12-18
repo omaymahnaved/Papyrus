@@ -1,0 +1,67 @@
+body{
+    text-align: center;
+    display: inline;
+    background-color: rgb(235, 227, 227);
+
+}
+.container-1 ,.container-2{
+    background-color:rgba(255, 192, 203, 0.637);
+    width: 500px;
+    /* border-radius: 20px; */
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+    margin: 5px 0px;
+    padding: 40px;
+    margin-left: 300px;
+    font-size: 20px;
+}
+button{
+    border: 1px solid black;
+    outline: 2px solid rgba(255, 255, 255, 0.815);
+    font-size: 10px;
+}
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+input{
+    background-color:whitesmoke;
+    border-radius: 9px;
+    padding: 2%;
+    border: none;
+    text-align: center;
+}
+
+input:focus{
+    outline:1px solid rgb(255, 152, 169);
+}
+
+.para1{
+    font-size: 25px;
+}
+
+.para2{
+    padding-top: 9%;
+    font-size: 25px;
+}
+
+.cardno{
+    padding-top: 0;
+}
+
+.btn:hover{
+    background-color:#7450b663;
+}
+
+button{
+   
+        margin-right: 5%;
+        /* padding-left: 5%; */
+        transition: 0.3s ease-in-out,
+
+   
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAPYRUS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="5stars.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    h2{
+        text-align: center;
+        font-size: 50px;
+    }
+    .container{
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="container mt-4 shadow-lg">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h2 class="text-dark">Feedback Form</h2>
+                <p class="text-dark">We would love to hear your thoughts!..</p>
+                <hr>
+                <form>
+                    <div class="form-group mt-3 md-3">
+                        <label class="form-label">Full Name:</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <hr>
+                    <p class="para">Your overall experience with us ?</p><br>
+                    <div class="rating">
+                        <input type="radio" name="star" id="star1"><label for="star1"></label>
+                        <input type="radio" name="star" id="star2"><label for="star2"></label>
+                        <input type="radio" name="star" id="star3"><label for="star3"></label>
+                        <input type="radio" name="star" id="star4"><label for="star4"></label>
+                        <input type="radio" name="star" id="star5"><label for="star5"></label>
+                    </div>
+
+                    <hr>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-info">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
